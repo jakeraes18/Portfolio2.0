@@ -1,0 +1,121 @@
+.hero-section {
+  background-color: var(--white);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(60vh - 70px); /* Ajusta a la altura del header */
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  text-align: left;
+  max-width: 1000px; /* Limita el ancho del contenido */
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  color: var(--dark-grey);
+  margin-bottom: 0px;
+}
+
+.hero-text h2 {
+  font-weight: normal;
+  margin: 0px 0;
+}
+
+.hero-text .hero-title { /* Nuevo estilo para tu título */
+  font-size: 1.5em;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.1em; /* Ajustado para mejor legibilidad */
+  color: var(--text-color);
+  line-height: 1.6;
+  margin-bottom: 15px; /* Espacio entre párrafos */
+}
+
+.hero-profile-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border: 5px solid var(--primary-color);
+}
+
+.btn-primary { /* Este es el botón genérico que quizás ya no uses si tienes el CopyEmailButton */
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 12px 25px;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* --- Estilos para los íconos sociales --- */
+.social-icons {
+  display: flex; /* Para alinearlos horizontalmente */
+  align-items: center; /* Para alinearlos verticalmente (si tuvieran diferente tamaño) */
+  gap: 15px; /* Espacio entre los íconos */
+  margin-top: 30px; /* Espacio superior para separarlos del texto */
+}
+
+.social-icon-wrapper {
+  display: flex; /* Para centrar el ícono dentro del círculo */
+  justify-content: center;
+  align-items: center;
+  width: 45px; /* Tamaño del círculo */
+  height: 45px; /* Tamaño del círculo */
+  border: 1px solid var(--primary-color); /* Borde de 1px con el color primario */
+  border-radius: 50%; /* Redondeado */
+  color: var(--primary-color); /* Color del ícono */
+  font-size: 1.5em; /* Tamaño del ícono */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icon-wrapper:hover {
+  background-color: var(--primary-color); /* Fondo primario al pasar el ratón */
+  color: var(--white); /* Ícono blanco al pasar el ratón */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column-reverse; /* Imagen arriba, texto abajo en móviles */
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2em;
+  }
+
+  .hero-text .hero-title {
+    font-size: 1.2em;
+  }
+
+  .hero-text p {
+    font-size: 1em;
+  }
+
+  .hero-profile-pic {
+    width: 180px;
+    height: 180px;
+  }
+
+  .social-icons {
+    justify-content: center; /* Centra los íconos en móviles */
+  }
+}

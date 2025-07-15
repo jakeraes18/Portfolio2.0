@@ -1,0 +1,42 @@
+:root {
+  --primary-color: #00d2fa;
+  --secondary-color: #6c757d;
+  --accent-color: #28a745;
+
+  /* Colores de fondo y texto para un tema CLARO */
+  --white: #ffffff;
+  --background-color: #f8f9fa;
+  --dark-background: #e9ecef;
+  --card-background: #ffffff;
+  
+  /* Colores de texto */
+  --dark-grey: #212529;
+  --text-color: #343a40;
+  --light-grey: #6c757d;
+
+  /* Sombras y bordes */
+  --box-shadow-light: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --border-color: #dee2e6;
+
+  /* Fuentes y otros ajustes generales */
+  --font-family-sans: 'Arial', sans-serif;
+  --font-size-base: 16px;
+  --line-height-base: 1.6;
+}
+
+/* Resto de tus estilos globales (body, a, etc.) */
+body {
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
