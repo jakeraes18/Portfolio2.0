@@ -2,8 +2,8 @@
 .header {
   background-color: var(--dark-grey);
   color: var(--white);
-  padding: 15px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0px 20px;
+  box-shadow: 0 2px 5px #0000001a;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -23,7 +23,7 @@
 }
 
 .logo-img {
-  height: 40px; /* Ajusta el tamaño de tu logo */
+  height: 26px;
   margin-right: 10px;
 }
 
