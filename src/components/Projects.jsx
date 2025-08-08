@@ -2,7 +2,7 @@ import React from 'react';
 import './Projects.css';
 import project1Image from '../assets/landingHackaton.png';
 import project2Image from '../assets/Orders.jpg';
-import project2Image from '../assets/PokeAPI.jpg';
+import project3Image from '../assets/PokeAPI.jpg';
 
 const ProjectCard = ({ title, description, imageUrl, link, technologies }) => {
   return (
@@ -43,7 +43,7 @@ const Projects = () => {
     {
       title: 'Pokedex con Angular',
       description: 'Sistema de busqueda de pokemones, donde puedes ver los detalles de cada uno y filtrarlos por tipo.',
-      imageUrl: project2Image,
+      imageUrl: project3Image,
       link: 'https://jakeraes18-pokemon-api.vercel.app/',
       technologies: ['Angular', 'SASS', 'Typescript', 'Bootstrap', 'ZoneJS']
     },
